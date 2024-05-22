@@ -11,3 +11,5 @@ elif peso >= 10:
     print("El precio a pagar son $500")
 else: 
     print("Por favor ingresa un numero valido")
+    
+    
