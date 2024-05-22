@@ -5,3 +5,5 @@ if edad >= 18:
     print ("Adelante. Puedes entrar")
 else:
     print ("No eres mayor de edad, no puedes entrar")
+
+
