@@ -10,5 +10,3 @@ elif c > a and c > b:
     print("El promedio mayor es:",c)
 else:
     print("Los numeros son iguales")
-
-    
