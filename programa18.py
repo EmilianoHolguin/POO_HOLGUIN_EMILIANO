@@ -15,5 +15,3 @@ for valor in productos.values():
    descuento= 0.10
    precio= valor -(valor * descuento)
    print(cosa,":$",precio)
-   
-   
