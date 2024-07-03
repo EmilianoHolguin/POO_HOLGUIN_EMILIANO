@@ -6,7 +6,7 @@ class Auto:
         self.modelo = modelo
         self.año = año
         self.interior = None
-        self.motor = None  # Agregamos la propiedad motor
+        self.motor = None  
         
     def encender(self):
         print("BRUMMMMM BRUMMMMM")
@@ -80,13 +80,13 @@ class Interior:
     
 # HERENCIA /////////////////////////////////////////////////////////////////////
 class AutoDeportivo(Auto):
-    def __init__(self, marca, modelo, año, velocidad_max):
-        super().__init__(marca, "Deportivo", modelo, año)
+    def __init__(self, marca, modelo, tipo, año, velocidad_max):
+        super().__init__(marca, tipo, modelo, año)
         self.velocidad_max = velocidad_max
         
     def descripcion(self):
         super().descripcion()
-        print("El", self.marca, self.modelo, self.año, 
+        print("El",self.tipo, self.marca, self.modelo, self.año, 
               "tiene una vel. máxima de", self.velocidad_max,
               "km/h, por eso es un auto deportivo.")
         
@@ -113,7 +113,7 @@ motor4 = Motor("V8 M838TQ de 3,8 litros y doble turbocompresor")
 auto1 = Auto("Chevrolet", "Muscle Car", "Camaro ZL1", 2024)
 auto2 = Auto("Toyota", "4X4", "Tacoma", 2025)
 auto3 = Auto("Porsche", "Hyper Car", "911 Carrera", 2023)
-auto4 = AutoDeportivo("McLaren", "P1 TM", 2024, 350)
+auto4 = AutoDeportivo("McLaren", "P1 TM", "Superdeportivo", 2024, 350)
 
 dueño = Propietario("Emiliano")
 mecanico = Mecanico("Mr. Alan")
